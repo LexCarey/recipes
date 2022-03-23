@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{recipe.name}}</title>
+</head>
+<body>
+    <h1>Hello {{session["user_first_name"]}}!</h1>
+
+    <h1>{{recipe.name}}</h1>
+
+    <p>Created By: {{recipe.creator.first_name}}</p>
+    <p>Description: {{recipe.description}}</p>
+    <p>Under 30 Minutes?: {{recipe.half_hour}}</p>
+    <p>Instructions: {{recipe.instructions}}</p>
+    <p>Date Made:{{recipe.date_made}}</p>
+
+    <a href="/recipes">Home</a>
+</body>
+</html>
